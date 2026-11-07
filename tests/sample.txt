@@ -1,0 +1,6 @@
+# Format: URL | plain-English test
+https://phptravels.com/demo | Find customer demo credentials shown on the page, log in, and verify the customer dashboard is shown.
+https://phptravels.com/demo | Find agent demo credentials shown on the page, log in, and verify an agent home or dashboard page is shown.
+https://phptravels.com/demo | Find admin demo credentials shown on the page, log in, and verify an admin dashboard is shown.
+https://www.saucedemo.com/ | Use the standard demo user credentials if available on the page and verify the products page is shown.
+https://www.saucedemo.com/ | Use the locked out user credentials if available on the page and verify an error message is shown.
