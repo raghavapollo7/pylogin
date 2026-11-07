@@ -1,5 +1,0 @@
-# Approach and limitations
-
-The tool turns a plain-English test into a sequence of browser actions. On each step, Playwright captures the current URL, page title, visible text, and visible interactive controls. A Groq-hosted language model chooses one JSON action; the runner validates it, executes it with Playwright, and returns browser errors as feedback for the next step. Text, URL, and visibility assertions are checked against the live page in code. The runner accepts PASS only after one of those checks succeeds. It saves a step log and screenshots in JSON and HTML reports.
-
-The runner is site-agnostic and does not contain selectors or credentials for a particular site. Inputs can be passed with `--vars`; credentials shown on the page can be used by the model. Results can still vary with model output and page changes. CAPTCHA, MFA, inaccessible frames, canvas interfaces, ambiguous requests, and missing test data can prevent completion. The current PHPTravels demo page asks for contact details before generating login credentials, so this submission checks its visible demo form and demonstrates login on SauceDemo instead.
