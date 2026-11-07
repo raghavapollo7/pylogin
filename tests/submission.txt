@@ -1,0 +1,3 @@
+# URL | plain-English test
+https://phptravels.com/demo | Verify the demo access form and the Get demo access button are visible.
+https://www.saucedemo.com/ | Log in using the standard demo credentials shown on the page and verify the Products page is visible.
